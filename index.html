@@ -389,6 +389,13 @@ html.print .hero-vid{display:none}
 @media (max-width:520px){.assoc .tile{height:84px}.assoc.sm .tile{height:56px}}
 html.print .assoc.sm .tile{height:72px}
 html.print .close-in .assoc .tile{height:100px}
+.purse{margin-top:20px;padding:24px;border:2px solid var(--antique);display:grid;gap:8px;background:#FBF8F1}
+.purse .tag{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--antique)}
+.purse .amt{font-family:var(--display);font-size:clamp(26px,2.8vw,40px);line-height:1.1;color:var(--indigo)}
+.purse p{margin:0;font-size:15px;color:#3A3D63}
+.calc .prov{gap:14px}
+.calc .prov li{font-size:16px;color:var(--sand-lt)}
+.calc .prov b{color:var(--ivory)}
 /* ===== print deck (PDF) ===== */
 html.print body{width:1600px;font-size:17px}
 html.print .nav,html.print .foot{display:none}
@@ -477,7 +484,7 @@ html.print #matrix .kick{display:none}
     <div class="facts">
       <div><b class="num" data-count="6">6</b><span>Franchises</span></div>
       <div><b class="num" data-count="60">60</b><span>Matches</span></div>
-      <div><b class="num" data-count="80">80</b><span>Warriors in the battlefield</span></div>
+      <div><b class="num" data-count="96">96</b><span>Warriors in the battlefield</span></div>
       <div><b class="num">₹<span data-count="3" style="font:inherit;letter-spacing:inherit;color:inherit;text-transform:none">3</span>L</b><span>Prize money</span></div>
     </div>
   </div>
@@ -588,7 +595,7 @@ html.print #matrix .kick{display:none}
         <li><b>A founding franchise for three seasons</b>, with first right to renew for season four.</li>
         <li><b>Your team, your identity.</b> Name and brand your army within the league's epic theme, with your jersey and colours.</li>
         <li><b>Spots for your own sponsors.</b> The league gives every franchise branding spots on its team kit for placing its own sponsors.</li>
-        <li><b>The live auction.</b> A table for your owner, coach/icon players and two guests, and a ₹1 lakh purse to draft a squad of at least ten, with men, women and masters players, from the player pool.</li>
+        <li><b>The live auction.</b> A table for your owner, coach/icon players and two guests, and a ₹1,50,000 purse to draft a 16-player squad of men, women and masters players from the player pool.</li>
       </ul>
       <ul class="ticks rv">
         <li><b>The owner spotlight.</b> An owner introduction reel, a seat at one press conference and your logo across league content.</li>
@@ -615,7 +622,7 @@ html.print #matrix .kick{display:none}
   <div class="wrap">
     <div class="head" style="margin-bottom:40px">
       <span class="kick">The numbers</span>
-      <h2 class="disp h2 split">Clear costs. Room to earn back.</h2>
+      <h2 class="disp h2 split">Your fee, your purse, our support.</h2>
     </div>
     <div class="money">
       <div>
@@ -623,39 +630,24 @@ html.print #matrix .kick{display:none}
           <div class="found"><span class="tag">Founding · pay by 15 Nov</span><span class="amt num">₹74,000</span><p>franchise fee per season, price-locked for all three seasons</p></div>
           <div><span class="tag" style="color:var(--antique)">Standard · after 15 Nov</span><span class="amt num">₹1,24,000</span><p>franchise fee per season, three-season commitment</p></div>
         </div>
-        <table class="ledger rv">
-          <thead><tr><th>Season one, founding owner</th><th>Amount</th></tr></thead>
-          <tbody>
-            <tr><td>Franchise fee</td><td>₹74,000</td></tr>
-            <tr><td>Team running costs</td><td>₹1,76,000</td></tr>
-            <tr class="sub"><td>Auction purse, spent on your squad</td><td>₹1,00,000</td></tr>
-            <tr class="sub"><td>Team stay with breakfast</td><td>₹40,000</td></tr>
-            <tr class="sub"><td>Team kit, 3 T-shirts each for 3 days</td><td>₹15,750</td></tr>
-            <tr class="sub"><td>Team meals, 3 match days</td><td>₹20,250</td></tr>
-            <tr class="tot"><td>Season one total</td><td>₹2,50,000</td></tr>
-          </tbody>
-        </table>
-        <p class="fine" style="margin-top:14px">Standard terms after 15 Nov: ₹1,24,000 fee, ₹3,00,000 season-one total. Payment: 50% on signing, 50% before the auction on 10 January 2027. GST as applicable.</p>
+        <div class="purse rv">
+          <span class="tag">Auction purse</span>
+          <span class="amt num">₹1,50,000</span>
+          <p>to draft your 16-player squad of men, women and masters players at the live auction on 10 January 2027</p>
+        </div>
+        <p class="fine" style="margin-top:14px">Payment: 50% on signing, 50% before the auction on 10 January 2027. GST as applicable.</p>
       </div>
       <div class="calc rv" id="calc">
-        <h3 class="disp h3">Your season-one cost</h3>
-        <div style="display:grid;gap:10px">
-          <label id="feeLbl">Franchise terms</label>
-          <div class="seg" role="group" aria-labelledby="feeLbl">
-            <button type="button" id="feeFound" aria-pressed="true">Founding ₹74,000</button>
-            <button type="button" id="feeStd" aria-pressed="false">Standard ₹1,24,000</button>
-          </div>
-        </div>
-        <div style="display:grid;gap:10px">
-          <label for="spon">Team sponsorship you raise: <span class="gold num" id="sponV">₹1,00,000</span></label>
-          <input type="range" id="spon" min="0" max="250000" step="5000" value="100000">
-        </div>
-        <div class="out">
-          <div><b class="num" id="oSpend">₹2,50,000</b><span>You invest</span></div>
-          <div><b class="num" id="oBack">₹1,00,000</b><span>Sponsors bring</span></div>
-          <div><b class="num hl" id="oNet">₹1,50,000</b><span>Net cost</span></div>
-        </div>
-        <p class="fine">Three-season fee total: <b class="num" id="o3">₹2,22,000</b>. Team sponsorship figures are illustrative; you set and keep your own team deals.</p>
+        <h3 class="disp h3">Provided by MSBL for your team</h3>
+        <ul class="ticks prov">
+          <li><b>Player stay with breakfast</b> for all 16 players across the 4 days</li>
+          <li><b>Team meals</b> for 20 team members on all 3 match days</li>
+          <li><b>Team kit</b>: match T-shirts for your players and staff</li>
+          <li><b>Match operations</b>: venue, certified officials and shuttles for every tie</li>
+          <li><b>Live stream</b> of every match your team plays, with score graphics</li>
+          <li><b>Auction night table</b> for the owner, coach/icon players and two guests</li>
+        </ul>
+        <p class="fine">You can also place your own sponsors on the branding spots on your team kit.</p>
       </div>
     </div>
   </div>
@@ -946,22 +938,6 @@ html.print #matrix .kick{display:none}
   var PRINT=q.get('print');
   if(PRINT){root.classList.add('print','deck-'+PRINT)}
   var inr=function(n){return '₹'+Math.round(n).toLocaleString('en-IN')};
-
-  /* ---------- franchise calculator ---------- */
-  var fee=74000, TEAM=176000;
-  var spon=document.getElementById('spon');
-  function calc(){
-    var s=+spon.value, spend=fee+TEAM;
-    document.getElementById('sponV').textContent=inr(s);
-    document.getElementById('oSpend').textContent=inr(spend);
-    document.getElementById('oBack').textContent=inr(s);
-    document.getElementById('oNet').textContent=inr(Math.max(spend-s,0));
-    document.getElementById('o3').textContent=inr(fee*3);
-  }
-  function setFee(v){fee=v;document.getElementById('feeFound').setAttribute('aria-pressed',v===74000);document.getElementById('feeStd').setAttribute('aria-pressed',v===124000);calc()}
-  document.getElementById('feeFound').addEventListener('click',function(){setFee(74000)});
-  document.getElementById('feeStd').addEventListener('click',function(){setFee(124000)});
-  spon.addEventListener('input',calc);calc();
 
   /* ---------- sponsor package builder ---------- */
   var TIERS={
