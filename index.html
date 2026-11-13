@@ -127,8 +127,8 @@ a{color:inherit}
 .bk.final b{color:var(--gold);font-size:16px}
 .tie{margin-top:clamp(36px,4vw,56px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,2fr);gap:clamp(24px,4vw,56px);align-items:center;border-top:1px solid var(--line);padding-top:clamp(28px,3vw,40px)}
 @media (max-width:980px){.tie{grid-template-columns:minmax(0,1fr)}}
-.rubbers{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
-@media (max-width:640px){.rubbers{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.rubbers{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+@media (max-width:640px){.rubbers{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .rub{border:1px solid var(--line-soft);padding:14px 10px;display:grid;gap:8px;justify-items:center;text-align:center}
 .rub.s{border-color:var(--gold)}
 .rub i{font-style:normal;font-family:var(--display);font-size:20px;color:var(--gold)}
@@ -396,6 +396,7 @@ html.print .close-in .assoc .tile{height:100px}
 .calc .prov{gap:14px}
 .calc .prov li{font-size:16px;color:var(--sand-lt)}
 .calc .prov b{color:var(--ivory)}
+.ledger td.inc-h{padding-top:16px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--antique);border-bottom:1px solid rgba(18,20,58,.25);text-align:left!important}
 /* ===== print deck (PDF) ===== */
 html.print body{width:1600px;font-size:17px}
 html.print .nav,html.print .foot{display:none}
@@ -483,7 +484,7 @@ html.print #matrix .kick{display:none}
       </div>
     <div class="facts">
       <div><b class="num" data-count="6">6</b><span>Franchises</span></div>
-      <div><b class="num" data-count="60">60</b><span>Matches</span></div>
+      <div><b class="num" data-count="70">70</b><span>Matches</span></div>
       <div><b class="num" data-count="96">96</b><span>Warriors in the battlefield</span></div>
       <div><b class="num">₹<span data-count="3" style="font:inherit;letter-spacing:inherit;color:inherit;text-transform:none">3</span>L</b><span>Prize money</span></div>
     </div>
@@ -499,7 +500,7 @@ html.print #matrix .kick{display:none}
       <p class="lead">MSBL turns a local tournament into a season-long story. Six franchises draft their squads at a live auction, then meet over three days of team badminton with a live stream, a full arena and a story behind every rally.</p>
     </div>
     <div class="g3">
-      <div class="pillar rv"><span class="n">I · Sena</span><h3 class="disp h3">Young and veteran, one team</h3><p>Every tie has two masters doubles for veteran players beside the singles, mixed and open doubles. Families come to watch both generations play on the same side, which no other league here offers.</p></div>
+      <div class="pillar rv"><span class="n">I · Sena</span><h3 class="disp h3">Young and veteran, one team</h3><p>Every tie has two masters doubles for veteran players beside the singles, mixed, women’s and open doubles. Families come to watch both generations play on the same side, which no other league here offers.</p></div>
       <div class="pillar rv"><span class="n">II · Katha</span><h3 class="disp h3">A story in every match</h3><p>Each franchise carries a warrior value from the epics: courage, focus, loyalty. Our content series tells those stories for 111 days, from Dussehra to the final.</p></div>
       <div class="pillar rv"><span class="n">III · Sangram</span><h3 class="disp h3">Built like a pro league</h3><p>A live player auction, a franchise structure with three-season commitments, certified officials, live-streamed matches and a ₹3 lakh prize pool.</p></div>
     </div>
@@ -530,17 +531,18 @@ html.print #matrix .kick{display:none}
     </div>
     <div class="tie">
       <div>
-        <h3 class="disp h3 gold">Every tie is six matches</h3>
-        <p class="muted" style="margin:12px 0 0">Men's and women's singles, mixed and open doubles, and two masters doubles for veteran players, each played as games to 15. No team wins on its young stars alone.</p>
-        <p class="fine" style="margin-top:14px">10 ties × 6 matches = <b class="gold">60 live-streamed matches</b></p>
+        <h3 class="disp h3 gold">Every tie is seven matches</h3>
+        <p class="muted" style="margin:12px 0 0">Men’s and women’s singles, mixed, women’s and open doubles, and two masters doubles for veteran players, each played as games to 15. No team wins on its young stars alone.</p>
+        <p class="fine" style="margin-top:14px">10 ties × 7 matches = <b class="gold">70 live-streamed matches</b></p>
       </div>
       <div class="rubbers">
         <div class="rub rv"><i>1</i><div class="dots"><u></u></div><span>Men's singles</span></div>
         <div class="rub rv"><i>2</i><div class="dots"><u></u></div><span>Women's singles</span></div>
         <div class="rub rv"><i>3</i><div class="dots"><u></u><u></u></div><span>Mixed doubles</span></div>
-        <div class="rub rv"><i>4</i><div class="dots"><u></u><u></u></div><span>Open doubles</span></div>
-        <div class="rub s rv"><i>5</i><div class="dots"><u></u><u></u></div><span>Masters doubles</span></div>
+        <div class="rub rv"><i>4</i><div class="dots"><u></u><u></u></div><span>Women's doubles</span></div>
+        <div class="rub rv"><i>5</i><div class="dots"><u></u><u></u></div><span>Open doubles</span></div>
         <div class="rub s rv"><i>6</i><div class="dots"><u></u><u></u></div><span>Masters doubles</span></div>
+        <div class="rub s rv"><i>7</i><div class="dots"><u></u><u></u></div><span>Masters doubles</span></div>
       </div>
     </div>
   </div>
@@ -560,7 +562,7 @@ html.print #matrix .kick{display:none}
       <div class="st rv"><span class="d">Nov – Dec</span><b>Player registration</b><p>Players register. Warrior profiles and press conferences.</p></div>
       <div class="st big rv"><span class="d">10 Jan 2027</span><b>The Auction · live</b><p>Six owners build their squads, streamed on YouTube.</p></div>
       <div class="st rv"><span class="d">Jan 2027</span><b>Team reveals</b><p>Squads, jerseys and rivalries, one franchise a day.</p></div>
-      <div class="st big rv"><span class="d">5–7 Feb 2027 (tentative)</span><b>Maha Sangram</b><p>60 matches at DSC Anand. Opening and closing ceremonies.</p></div>
+      <div class="st big rv"><span class="d">5–7 Feb 2027 (tentative)</span><b>Maha Sangram</b><p>70 matches at DSC Anand. Opening and closing ceremonies.</p></div>
     </div>
     <div class="span-bar rv"><b class="num">111</b><span>days of campaign content, more than one press conference, a live auction night and 3 match days, all carrying franchise and partner branding.</span></div>
   </div>
@@ -630,24 +632,40 @@ html.print #matrix .kick{display:none}
           <div class="found"><span class="tag">Founding · pay by 15 Nov</span><span class="amt num">₹74,000</span><p>franchise fee per season, price-locked for all three seasons</p></div>
           <div><span class="tag" style="color:var(--antique)">Standard · after 15 Nov</span><span class="amt num">₹1,24,000</span><p>franchise fee per season, three-season commitment</p></div>
         </div>
-        <div class="purse rv">
-          <span class="tag">Auction purse</span>
-          <span class="amt num">₹1,50,000</span>
-          <p>to draft your 16-player squad of men, women and masters players at the live auction on 10 January 2027</p>
-        </div>
+        <table class="ledger rv">
+          <thead><tr><th>Season one, per team</th><th>Amount</th></tr></thead>
+          <tbody>
+            <tr><td>Auction purse, spent on your 16-player squad</td><td>₹1,50,000</td></tr>
+            <tr><td colspan="2" class="inc-h">Provided by MSBL for your team</td></tr>
+            <tr class="sub"><td>Player stay with breakfast, 16 players for 4 days</td><td>Included</td></tr>
+            <tr class="sub"><td>Team meals, 20 team members on 3 match days</td><td>Included</td></tr>
+            <tr class="sub"><td>Team kit, match T-shirts for players and staff</td><td>Included</td></tr>
+            <tr class="sub"><td>Venue, certified officials and shuttles for every tie</td><td>Included</td></tr>
+            <tr class="sub"><td>Live stream of every match, with score graphics</td><td>Included</td></tr>
+            <tr class="sub"><td>Auction-night table for owner, coach/icon players and two guests</td><td>Included</td></tr>
+          </tbody>
+        </table>
         <p class="fine" style="margin-top:14px">Payment: 50% on signing, 50% before the auction on 10 January 2027. GST as applicable.</p>
       </div>
       <div class="calc rv" id="calc">
-        <h3 class="disp h3">Provided by MSBL for your team</h3>
-        <ul class="ticks prov">
-          <li><b>Player stay with breakfast</b> for all 16 players across the 4 days</li>
-          <li><b>Team meals</b> for 20 team members on all 3 match days</li>
-          <li><b>Team kit</b>: match T-shirts for your players and staff</li>
-          <li><b>Match operations</b>: venue, certified officials and shuttles for every tie</li>
-          <li><b>Live stream</b> of every match your team plays, with score graphics</li>
-          <li><b>Auction night table</b> for the owner, coach/icon players and two guests</li>
-        </ul>
-        <p class="fine">You can also place your own sponsors on the branding spots on your team kit.</p>
+        <h3 class="disp h3">Your season-one cost</h3>
+        <div style="display:grid;gap:10px">
+          <label id="feeLbl">Franchise terms</label>
+          <div class="seg" role="group" aria-labelledby="feeLbl">
+            <button type="button" id="feeFound" aria-pressed="true">Founding ₹74,000</button>
+            <button type="button" id="feeStd" aria-pressed="false">Standard ₹1,24,000</button>
+          </div>
+        </div>
+        <div style="display:grid;gap:10px">
+          <label for="spon">Team sponsorship you bring: <span class="gold num" id="sponV">₹1,00,000</span></label>
+          <input type="range" id="spon" min="0" max="300000" step="5000" value="100000">
+        </div>
+        <div class="out">
+          <div><b class="num" id="oSpend">₹3,38,850</b><span>You invest</span></div>
+          <div><b class="num" id="oBack">₹1,00,000</b><span>Sponsors bring</span></div>
+          <div><b class="num hl" id="oNet">₹2,38,850</b><span>Net cost</span></div>
+        </div>
+        <p class="fine">“You invest” is the franchise fee plus your full team package, including the ₹1,50,000 purse and everything MSBL provides. Three-season fee total: <b class="num" id="o3">₹2,22,000</b>. Team sponsorship figures are illustrative; you place your own sponsors on your kit and keep those deals.</p>
       </div>
     </div>
   </div>
@@ -680,7 +698,7 @@ html.print #matrix .kick{display:none}
     <div class="aud">
       <div class="rv"><b class="big">2 gen</b><h3 class="disp h3">Families, not just fans</h3><p>Young players and veterans share each squad, so parents, grandparents, schools and clubs all have someone to cheer. Your brand reaches the household, not one age group.</p></div>
       <div class="rv"><b class="big">6</b><h3 class="disp h3">Owners in one room</h3><p>Franchise owners are Gujarat business leaders. Auction night puts partners at the same tables, with hospitality built for conversations that lead to business.</p></div>
-      <div class="rv"><b class="big num">60</b><h3 class="disp h3">Live matches</h3><p>Every match is streamed live on YouTube with score graphics. Your logo sits on screen, on court and in the replay.</p></div>
+      <div class="rv"><b class="big num">70</b><h3 class="disp h3">Live matches</h3><p>Every match is streamed live on YouTube with score graphics. Your logo sits on screen, on court and in the replay.</p></div>
       <div class="rv"><b class="big">Own</b><h3 class="disp h3">A moment, not a corner</h3><p>Named moments such as Smash of the Day repeat in every broadcast and reel. Viewers remember the brand that owns the best shot of the night.</p></div>
       <div class="rv"><b class="big">1</b><h3 class="disp h3">Brand per category</h3><p>Category exclusivity at every level. If you are our bank, healthcare or beverage partner, no competitor shares the court.</p></div>
       <div class="rv"><b class="big">CSR</b><h3 class="disp h3">Sport that builds people</h3><p>A league that gives young Gujarati players a professional stage and keeps veterans in the game fits naturally with youth, health and community goals.</p></div>
@@ -707,7 +725,7 @@ html.print #matrix .kick{display:none}
           <li>Your name in the league title on every post, stream and press note</li>
           <li>Presenting partner of the live auction night</li>
           <li>Main backdrop, 4 court-side boards, umpire chair, LED every cycle</li>
-          <li>On-screen logo for all 60 matches plus 2 pre-roll spots a day</li>
+          <li>On-screen logo for all 70 matches plus 2 pre-roll spots a day</li>
           <li>Your logo on the league patch on all six team jerseys</li>
           <li>Celebrity guest appearance with your brand</li>
           <li>6 dedicated brand reels · Final trophy presentation</li>
@@ -777,7 +795,7 @@ html.print #matrix .kick{display:none}
           <tr><th scope="row">Logo across 111 days of content</th><td>Lead</td><td>Lock-up</td><td>Partner strip</td><td>Partner strip</td></tr>
           <tr><th scope="row">Dedicated brand reels</th><td>6</td><td>3</td><td>1</td><td>Series</td></tr>
           <tr><th scope="row">Named moment or category title</th><td class="y"></td><td class="y"></td><td class="n"></td><td class="y"></td></tr>
-          <tr class="mxg"><td colspan="5">Broadcast · 60 live matches</td></tr>
+          <tr class="mxg"><td colspan="5">Broadcast · 70 live matches</td></tr>
           <tr><th scope="row">On-screen logo</th><td>All matches</td><td class="n"></td><td>Partner slate</td><td>On each moment</td></tr>
           <tr><th scope="row">Pre-roll spots</th><td>2 a day</td><td class="n"></td><td class="n"></td><td class="n"></td></tr>
           <tr class="mxg"><td colspan="5">Venue · DSC Anand</td></tr>
@@ -856,7 +874,7 @@ html.print #matrix .kick{display:none}
         <span class="total num" id="bTotal">₹7,00,000</span>
         <div class="out" style="border-top:1px solid var(--line)">
           <div><b class="num" id="bDay">₹6,306</b><span>Per day of visibility</span></div>
-          <div><b class="num" id="bMatch">₹11,667</b><span>Per live match</span></div>
+          <div><b class="num" id="bMatch">₹10,000</b><span>Per live match</span></div>
           <div><b class="num" id="bPass">8</b><span>Auction-night seats</span></div>
         </div>
         <ul class="ticks" id="bList"></ul>
@@ -939,9 +957,25 @@ html.print #matrix .kick{display:none}
   if(PRINT){root.classList.add('print','deck-'+PRINT)}
   var inr=function(n){return '₹'+Math.round(n).toLocaleString('en-IN')};
 
+  /* ---------- franchise calculator ---------- */
+  var fee=74000, TEAM=264850;
+  var spon=document.getElementById('spon');
+  function calc(){
+    var s=+spon.value, spend=fee+TEAM;
+    document.getElementById('sponV').textContent=inr(s);
+    document.getElementById('oSpend').textContent=inr(spend);
+    document.getElementById('oBack').textContent=inr(s);
+    document.getElementById('oNet').textContent=inr(Math.max(spend-s,0));
+    document.getElementById('o3').textContent=inr(fee*3);
+  }
+  function setFee(v){fee=v;document.getElementById('feeFound').setAttribute('aria-pressed',v===74000);document.getElementById('feeStd').setAttribute('aria-pressed',v===124000);calc()}
+  document.getElementById('feeFound').addEventListener('click',function(){setFee(74000)});
+  document.getElementById('feeStd').addEventListener('click',function(){setFee(124000)});
+  spon.addEventListener('input',calc);calc();
+
   /* ---------- sponsor package builder ---------- */
   var TIERS={
-    title:{p:700000,pass:8,list:['League title: "[Your brand] presents MSBL"','Presenting partner of the live auction night','On-screen logo for all 60 matches, 2 pre-roll spots a day','Main backdrop, 4 court-side boards, umpire chair','League patch on all six team jerseys','6 dedicated reels, champions trophy presentation']},
+    title:{p:700000,pass:8,list:['League title: "[Your brand] presents MSBL"','Presenting partner of the live auction night','On-screen logo for all 70 matches, 2 pre-roll spots a day','Main backdrop, 4 court-side boards, umpire chair','League patch on all six team jerseys','6 dedicated reels, champions trophy presentation']},
     powered:{p:400000,pass:4,list:['"Powered by" lock-up beside the league logo','2 court-side boards and LED rotation','Every press-conference backdrop','3 dedicated reels, runners-up trophy presentation']},
     associate:{p:200000,pass:0,list:['Partner strip on every post and backdrop','1 court-side board and LED rotation','10 × 10 ft activation space at the venue','1 dedicated reel']},
     moment:{p:75000,pass:0,list:['One named moment or category title','Called on stream every time it happens','Recurring reel series in your name','Partner strip and LED rotation']}
@@ -952,7 +986,7 @@ html.print #matrix .kick{display:none}
     var total=t.p+moments*75000;
     document.getElementById('bTotal').textContent=inr(total);
     document.getElementById('bDay').textContent=inr(total/111);
-    document.getElementById('bMatch').textContent=inr(total/60);
+    document.getElementById('bMatch').textContent=inr(total/70);
     document.getElementById('bPass').textContent=t.pass;
     document.getElementById('mCount').textContent=moments;
     var items=t.list.slice();
