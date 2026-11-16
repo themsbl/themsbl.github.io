@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MSBL Season One Pitch</title>
+<title>MSBL Season One · Franchise</title>
 <meta name="description" content="Own a founding franchise or partner with the Maha Sangram Badminton League, Season One, DSC Anand, 5–7 February 2027.">
 <style>
 /* Layout: a scrolling war-room deck. Full-bleed duotone plates for chapter openers, ivory-on-indigo slides between, gold used as edges and key numbers only. */
@@ -397,6 +397,26 @@ html.print .close-in .assoc .tile{height:100px}
 .calc .prov li{font-size:16px;color:var(--sand-lt)}
 .calc .prov b{color:var(--ivory)}
 .ledger td.inc-h{padding-top:16px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--antique);border-bottom:1px solid rgba(18,20,58,.25);text-align:left!important}
+.slot.std em{background:var(--sand);}
+.eq{display:flex;align-items:stretch;gap:18px;flex-wrap:wrap;margin-bottom:clamp(36px,4vw,56px)}
+.eqb{flex:1 1 220px;min-width:0;border:1px solid var(--line);padding:22px 24px;display:grid;gap:8px;align-content:start;background:rgba(11,12,38,.45)}
+.eqb .eqk{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.eqb b{font-family:var(--display);font-weight:400;font-size:clamp(22px,2.3vw,32px);color:var(--ivory);line-height:1.15}
+.eqb .eqs{font-size:14px;color:var(--sand)}
+.eqb.tot{flex:1.3 1 260px;background:var(--gold);border-color:var(--gold)}
+.eqb.tot .eqk,.eqb.tot .eqs{color:var(--indigo)}
+.eqb.tot b{color:var(--indigo);font-size:clamp(28px,3.2vw,46px)}
+.eqo{align-self:center;font-family:var(--display);font-size:32px;color:var(--gold)}
+@media (max-width:760px){.eqo{display:none}}
+.pl .pillar .n{font-size:12px}
+.mission{margin:clamp(32px,4vw,48px) 0 0;font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:clamp(15px,1.4vw,20px);color:var(--gold);line-height:1.5;border-top:1px solid var(--line);padding-top:24px}
+html.print #players .head{margin-bottom:22px!important}
+html.print .eq{margin-bottom:26px}
+html.print .eqb{padding:16px 20px}
+html.print .pl{gap:18px}
+html.print .pl .pillar{padding-top:14px;gap:8px}
+html.print .pl .pillar p{font-size:14px}
+html.print .mission{margin-top:22px;padding-top:16px}
 /* ===== print deck (PDF) ===== */
 html.print body{width:1600px;font-size:17px}
 html.print .nav,html.print .foot{display:none}
@@ -447,6 +467,19 @@ html.print .chair-ph img{max-height:380px}
 html.print #matrix .head{margin-bottom:14px!important}
 html.print #matrix .kick{display:none}
 @page{size:1600px 900px;margin:0}
+.war{margin-bottom:clamp(28px,3vw,44px)}
+.wcard{border:1px solid var(--line);padding:22px;display:grid;gap:8px;align-content:start;background:linear-gradient(180deg,rgba(217,185,119,.10),rgba(11,12,38,0))}
+.wcard .wn{font-family:var(--display);text-transform:uppercase;letter-spacing:.1em;font-size:15px;color:var(--gold)}
+.wcard b{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--sand)}
+.wcard p{margin:0;font-size:15px;line-height:1.5}
+.channels{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:clamp(28px,3vw,40px)}
+.channels .btn{min-height:42px;font-size:12px}
+html.print #series .head{margin-bottom:20px!important}
+html.print .war{margin-bottom:18px;gap:14px}
+html.print .wcard{padding:14px 16px;gap:6px}
+html.print .wcard p,html.print .series-how .pillar p{font-size:13.5px}
+html.print .series-how{gap:16px}
+html.print .channels{margin-top:16px}
 </style>
 </head>
 <body>
@@ -456,9 +489,9 @@ html.print #matrix .kick{display:none}
   <ul>
     <li><a href="#league">The League</a></li>
     <li><a href="#format">Format</a></li>
+    <li><a href="#series">The Series</a></li>
     <li><a href="#franchise">Own a Franchise</a></li>
-    <li><a href="#sponsor">Sponsor</a></li>
-    <li><a href="#investment">Investment</a></li>
+    <li><a href="#players">For Players</a></li>
   </ul>
   <a class="btn btn-gold" href="#contact">Talk to us</a>
 </nav>
@@ -473,10 +506,10 @@ html.print #matrix .kick{display:none}
     <span class="logo-shine rv-hero"><img class="hero-logo" src="msbl-lockup-gold.png" alt="MSBL Maha Sangram Badminton League"></span>
     <p class="hero-guj rv-hero" lang="hi">महासंग्राम · Season One</p>
     <h1 class="disp h1 split">Six armies. One court. No retreat.</h1>
-    <p class="lead rv-hero">Gujarat's franchise badminton league, where young players and veterans fight on the same side. Built on the stories of the Ramayana and the Mahabharata, staged at DSC (District Sports Center), Anand, 5–7 February 2027 (tentative).</p>
+    <p class="lead rv-hero">Gujarat's franchise badminton league, where young players and veterans fight on the same side. Built on the stories of the Ramayana and the Mahabharata, staged at DSC (District Sports Complex), Anand, 5–7 February 2027 (tentative).</p>
     <div class="hero-row rv-hero noprint">
       <a class="btn btn-gold" href="#franchise">Own a founding franchise</a>
-      <a class="btn btn-line" href="#sponsor">Become a partner</a>
+      <a class="btn btn-line" href="#players">What players get</a>
     </div>
     <div class="assoc sm rv-hero">
         <figure><figcaption>Organized by</figcaption><span class="tile"><img src="logo-adba.png" alt="Anand District Badminton Association"></span></figure>
@@ -558,7 +591,7 @@ html.print #matrix .kick{display:none}
     </div>
     <div class="tl">
       <div class="st big rv"><span class="d">20 Oct 2026</span><b>The Call · Dussehra launch</b><p>League reveal, teaser film and the story series begins.</p></div>
-      <div class="st rv"><span class="d">15 Nov 2026</span><b>Founding deadline</b><p>Last day for founding franchise and founding partner terms.</p></div>
+      <div class="st rv"><span class="d">Now open</span><b>Founding franchises</b><p>The first four teams to sign get founding terms; teams five and six pay the standard fee.</p></div>
       <div class="st rv"><span class="d">Nov – Dec</span><b>Player registration</b><p>Players register. Warrior profiles and press conferences.</p></div>
       <div class="st big rv"><span class="d">10 Jan 2027</span><b>The Auction · live</b><p>Six owners build their squads, streamed on YouTube.</p></div>
       <div class="st rv"><span class="d">Jan 2027</span><b>Team reveals</b><p>Squads, jerseys and rivalries, one franchise a day.</p></div>
@@ -569,6 +602,33 @@ html.print #matrix .kick{display:none}
 </section>
 
 <!-- ===================== FRANCHISE TRACK ===================== -->
+
+<!-- THE SERIES -->
+<section class="slide s-mid" id="series" data-deck="franchise sponsor">
+  <div class="wrap">
+    <div class="head" style="margin-bottom:36px">
+      <span class="kick">The series · Know your warriors</span>
+      <h2 class="disp h2 split">The war has changed. The weapons have changed. The warrior has not.</h2>
+      <p class="lead">Netflix’s <i>Drive to Survive</i> took fans behind the scenes of Formula 1 and grew its following around the world in a few seasons. MSBL will do the same for badminton: a documentary series that follows our team owners and players, their stories and their passion for the game. By the first serve, Gujarat will know every owner and every player, and every fan will already have a favourite.</p>
+    </div>
+    <div class="g4 war">
+      <div class="wcard rv"><span class="wn">Arjun</span><b>Focus</b><p>The archer who saw only the bird’s eye. Today, the smasher who sees only the gap.</p></div>
+      <div class="wcard rv"><span class="wn">Eklavya</span><b>Devotion</b><p>The warrior who trained alone. Today, the player who practised for years without a stage and finally gets one.</p></div>
+      <div class="wcard rv"><span class="wn">Bhishma Pitamah</span><b>Wisdom</b><p>The elder who never left the field. Today, the masters player who still wins the long rally.</p></div>
+      <div class="wcard rv"><span class="wn">Karna</span><b>Loyalty</b><p>The warrior who stood by his side to the end. Today, the player who carries the team when it matters most.</p></div>
+    </div>
+    <div class="g3 series-how">
+      <div class="pillar rv"><span class="n">Before the auction</span><p>Episodes on every team owner: why they came in and what they want to build.</p></div>
+      <div class="pillar rv"><span class="n">Before the battle</span><p>Player stories, rivalries and training, so fans pick their favourites before match day.</p></div>
+      <div class="pillar rv"><span class="n">During the league</span><p>Behind the scenes from every tie: the dugout, the timeouts, the comebacks.</p></div>
+    </div>
+    <div class="channels rv">
+      <span class="fine">Watch the series and follow the league</span>
+      <a class="btn btn-line" href="https://www.instagram.com/the.msbl/" target="_blank" rel="noopener">Instagram · @the.msbl</a>
+      <span class="btn btn-line">YouTube · MSBL channel</span>
+    </div>
+  </div>
+</section>
 
 <!-- 5 FRANCHISE OPENER -->
 <section class="slide opener" id="franchise" data-deck="franchise">
@@ -608,11 +668,11 @@ html.print #matrix .kick{display:none}
     </div>
     <div class="frame rv" style="margin-top:48px">
       <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px">
-        <h3 class="disp h3 gold">Franchise slots</h3><span class="fine">Six slots. Founding terms close 15 Nov 2026.</span>
+        <h3 class="disp h3 gold">Franchise slots</h3><span class="fine">Six slots. The first four to sign get founding terms.</span>
       </div>
       <div class="slots">
-        <div class="slot"><b>I</b><em>Open</em></div><div class="slot"><b>II</b><em>Open</em></div><div class="slot"><b>III</b><em>Open</em></div>
-        <div class="slot"><b>IV</b><em>Open</em></div><div class="slot"><b>V</b><em>Open</em></div><div class="slot"><b>VI</b><em>Open</em></div>
+        <div class="slot"><b>I</b><em>Founding</em></div><div class="slot"><b>II</b><em>Founding</em></div><div class="slot"><b>III</b><em>Founding</em></div>
+        <div class="slot"><b>IV</b><em>Founding</em></div><div class="slot std"><b>V</b><em>Standard</em></div><div class="slot std"><b>VI</b><em>Standard</em></div>
       </div>
     </div>
   </div>
@@ -629,8 +689,8 @@ html.print #matrix .kick{display:none}
     <div class="money">
       <div>
         <div class="fee rv">
-          <div class="found"><span class="tag">Founding · pay by 15 Nov</span><span class="amt num">₹1,35,150</span><p>franchise fee per season, price-locked for all three seasons</p></div>
-          <div><span class="tag" style="color:var(--antique)">Standard · after 15 Nov</span><span class="amt num">₹1,85,150</span><p>franchise fee per season, three-season commitment</p></div>
+          <div class="found"><span class="tag">Founding · first four teams</span><span class="amt num">₹1,86,150</span><p>franchise fee per season, price-locked for all three seasons</p></div>
+          <div><span class="tag" style="color:var(--antique)">Standard · teams five and six</span><span class="amt num">₹2,36,150</span><p>franchise fee per season, three-season commitment</p></div>
         </div>
         <table class="ledger rv">
           <thead><tr><th>Season one, per team</th><th>Amount</th></tr></thead>
@@ -652,8 +712,8 @@ html.print #matrix .kick{display:none}
         <div style="display:grid;gap:10px">
           <label id="feeLbl">Franchise terms</label>
           <div class="seg" role="group" aria-labelledby="feeLbl">
-            <button type="button" id="feeFound" aria-pressed="true">Founding ₹1,35,150</button>
-            <button type="button" id="feeStd" aria-pressed="false">Standard ₹1,85,150</button>
+            <button type="button" id="feeFound" aria-pressed="true">Founding ₹1,86,150</button>
+            <button type="button" id="feeStd" aria-pressed="false">Standard ₹2,36,150</button>
           </div>
         </div>
         <div style="display:grid;gap:10px">
@@ -661,11 +721,11 @@ html.print #matrix .kick{display:none}
           <input type="range" id="spon" min="0" max="300000" step="5000" value="100000">
         </div>
         <div class="out">
-          <div><b class="num" id="oSpend">₹4,00,000</b><span>You invest</span></div>
+          <div><b class="num" id="oSpend">₹4,51,000</b><span>You invest</span></div>
           <div><b class="num" id="oBack">₹1,00,000</b><span>Sponsors bring</span></div>
-          <div><b class="num hl" id="oNet">₹3,00,000</b><span>Net cost</span></div>
+          <div><b class="num hl" id="oNet">₹3,51,000</b><span>Net cost</span></div>
         </div>
-        <p class="fine">“You invest” is the franchise fee plus your full team package, including the ₹1,50,000 purse and everything MSBL provides. Three-season fee total: <b class="num" id="o3">₹4,05,450</b>. Team sponsorship figures are illustrative; you place your own sponsors on your kit and keep those deals.</p>
+        <p class="fine">“You invest” is the franchise fee plus your full team package, including the ₹1,50,000 purse and everything MSBL provides. Three-season fee total: <b class="num" id="o3">₹5,58,450</b>. Team sponsorship figures are illustrative; you place your own sponsors on your kit and keep those deals.</p>
       </div>
     </div>
   </div>
@@ -673,241 +733,41 @@ html.print #matrix .kick{display:none}
 
 <!-- ===================== SPONSOR TRACK ===================== -->
 
-<!-- 8 SPONSOR OPENER -->
-<section class="slide opener" id="sponsor" data-deck="sponsor">
-  <div class="bg"><img src="plate-smash-4x5.jpg" alt="" style="object-position:70% 35%"><canvas class="fx" aria-hidden="true"></canvas></div>
-  <span class="track">For partners</span>
-  <div class="wrap">
-    <div class="opener-in">
-      <span class="big-n num">111</span>
-      <h2 class="disp h1 split">Days of your brand in the fight.</h2>
-      <p class="lead">Most event sponsorships buy three days of banners. MSBL partners appear from the Dussehra launch to the final shuttle, in a story people follow, with live moments named after them.</p>
-      <div class="hero-row noprint"><a class="btn btn-gold" href="#tiers">See partnership levels</a><a class="btn btn-line" href="#builder">Build your package</a></div>
-    </div>
-  </div>
-</section>
 
-<!-- 9 WHY SPONSOR -->
-<section class="slide s-mid" data-deck="sponsor">
-  <span class="track">For partners</span>
-  <div class="wrap">
-    <div class="head">
-      <span class="kick">Why partner with MSBL</span>
-      <h2 class="disp h2 split">The right room, the right story, the whole season.</h2>
-    </div>
-    <div class="aud">
-      <div class="rv"><b class="big">2 gen</b><h3 class="disp h3">Families, not just fans</h3><p>Young players and veterans share each squad, so parents, grandparents, schools and clubs all have someone to cheer. Your brand reaches the household, not one age group.</p></div>
-      <div class="rv"><b class="big">6</b><h3 class="disp h3">Owners in one room</h3><p>Franchise owners are Gujarat business leaders. Auction night puts partners at the same tables, with hospitality built for conversations that lead to business.</p></div>
-      <div class="rv"><b class="big num">70</b><h3 class="disp h3">Live matches</h3><p>Every match is streamed live on YouTube with score graphics. Your logo sits on screen, on court and in the replay.</p></div>
-      <div class="rv"><b class="big">Own</b><h3 class="disp h3">A moment, not a corner</h3><p>Named moments such as Smash of the Day repeat in every broadcast and reel. Viewers remember the brand that owns the best shot of the night.</p></div>
-      <div class="rv"><b class="big">1</b><h3 class="disp h3">Brand per category</h3><p>Category exclusivity at every level. If you are our bank, healthcare or beverage partner, no competitor shares the court.</p></div>
-      <div class="rv"><b class="big">CSR</b><h3 class="disp h3">Sport that builds people</h3><p>A league that gives young Gujarati players a professional stage and keeps veterans in the game fits naturally with youth, health and community goals.</p></div>
-    </div>
-  </div>
-</section>
 
-<!-- 10 TIERS -->
-<section class="slide s-ind" id="tiers" data-deck="sponsor">
-  <span class="track">For partners</span>
-  <div class="wrap">
-    <div class="head" style="margin-bottom:48px">
-      <span class="kick">Partnership levels</span>
-      <h2 class="disp h2 split">Four ways into the arena.</h2>
-    </div>
-    <div class="tiers">
-      <article class="tier title rv">
-        <span class="badge">1 slot</span>
-        <span class="slotsn">Title partner</span>
-        <span class="nm">[Your brand] presents MSBL</span>
-        <span class="pr num">₹7,00,000<small>Season one</small></span>
-        <div class="ln"></div>
-        <ul class="ticks">
-          <li>Your name in the league title on every post, stream and press note</li>
-          <li>Presenting partner of the live auction night</li>
-          <li>Main backdrop, 4 court-side boards, umpire chair, LED every cycle</li>
-          <li>On-screen logo for all 70 matches plus 2 pre-roll spots a day</li>
-          <li>Your logo on the league patch on all six team jerseys</li>
-          <li>Celebrity guest appearance with your brand</li>
-          <li>6 dedicated brand reels · Final trophy presentation</li>
-          <li>8 auction-night seats</li>
-        </ul>
-      </article>
-      <article class="tier rv">
-        <span class="badge">1 slot</span>
-        <span class="slotsn">Powered by</span>
-        <span class="nm">MSBL powered by [your brand]</span>
-        <span class="pr num">₹4,00,000<small>Season one</small></span>
-        <div class="ln"></div>
-        <ul class="ticks">
-          <li>"Powered by" lock-up beside the league logo in all content</li>
-          <li>2 court-side boards and LED rotation</li>
-          <li>Logo on every press-conference backdrop</li>
-          <li>3 dedicated brand reels</li>
-          <li>Runners-up trophy presentation</li>
-          <li>4 auction-night seats</li>
-        </ul>
-      </article>
-      <article class="tier rv">
-        <span class="badge">3 slots</span>
-        <span class="slotsn">Associate partner</span>
-        <span class="nm">Official associate partner</span>
-        <span class="pr num">₹2,00,000<small>Season one</small></span>
-        <div class="ln"></div>
-        <ul class="ticks">
-          <li>Logo on the partner strip of every post and backdrop</li>
-          <li>1 court-side board and LED rotation</li>
-          <li>A 10 × 10 ft activation space at the venue</li>
-          <li>1 dedicated brand reel</li>
-        </ul>
-      </article>
-      <article class="tier rv">
-        <span class="badge">6 slots</span>
-        <span class="slotsn">Moment or category partner</span>
-        <span class="nm">Own a moment or a category</span>
-        <span class="pr num">₹75,000<small>Season one</small></span>
-        <div class="ln"></div>
-        <ul class="ticks">
-          <li>"[Moment] presented by you", called on stream every time it happens</li>
-          <li>Or an official category title, such as Official Healthcare Partner</li>
-          <li>A recurring reel series in your name</li>
-          <li>Logo on the partner strip and LED rotation</li>
-        </ul>
-      </article>
-    </div>
-    <p class="fine rv" style="margin-top:26px">Every partner receives category exclusivity and a post-season report of reach, views and on-site activity. GST as applicable.</p>
-  </div>
-</section>
 
-<!-- 11 MATRIX -->
-<section class="slide s-iv" id="matrix" data-deck="sponsor">
-  <span class="track">For partners</span>
-  <div class="wrap">
-    <div class="head" style="margin-bottom:34px">
-      <span class="kick">Rights at a glance</span>
-      <h2 class="disp h2 split">What every level receives.</h2>
-    </div>
-    <div class="mx-wrap rv">
-      <table class="mx">
-        <thead><tr><th scope="col">Right</th><th scope="col" class="t1">Title<br>₹7L</th><th scope="col">Powered by<br>₹4L</th><th scope="col">Associate<br>₹2L</th><th scope="col">Moment / category<br>₹75K</th></tr></thead>
-        <tbody>
-          <tr class="mxg"><td colspan="5">Naming and content</td></tr>
-          <tr><th scope="row">Name in the league title</th><td class="y"></td><td class="n"></td><td class="n"></td><td class="n"></td></tr>
-          <tr><th scope="row">Logo across 111 days of content</th><td>Lead</td><td>Lock-up</td><td>Partner strip</td><td>Partner strip</td></tr>
-          <tr><th scope="row">Dedicated brand reels</th><td>6</td><td>3</td><td>1</td><td>Series</td></tr>
-          <tr><th scope="row">Named moment or category title</th><td class="y"></td><td class="y"></td><td class="n"></td><td class="y"></td></tr>
-          <tr class="mxg"><td colspan="5">Broadcast · 70 live matches</td></tr>
-          <tr><th scope="row">On-screen logo</th><td>All matches</td><td class="n"></td><td>Partner slate</td><td>On each moment</td></tr>
-          <tr><th scope="row">Pre-roll spots</th><td>2 a day</td><td class="n"></td><td class="n"></td><td class="n"></td></tr>
-          <tr class="mxg"><td colspan="5">Venue · DSC Anand</td></tr>
-          <tr><th scope="row">Court-side boards</th><td>4</td><td>2</td><td>1</td><td class="n"></td></tr>
-          <tr><th scope="row">Main backdrop and umpire chair</th><td class="y"></td><td class="n"></td><td class="n"></td><td class="n"></td></tr>
-          <tr><th scope="row">LED rotation</th><td>Every cycle</td><td class="y"></td><td class="y"></td><td class="y"></td></tr>
-          <tr><th scope="row">Activation space</th><td class="y"></td><td class="y"></td><td>10 × 10 ft</td><td class="n"></td></tr>
-          <tr><th scope="row">League patch on all six jerseys</th><td class="y"></td><td class="n"></td><td class="n"></td><td class="n"></td></tr>
-          <tr class="mxg"><td colspan="5">Events and hospitality</td></tr>
-          <tr><th scope="row">Auction night</th><td>Presenter · 8 seats</td><td>4 seats</td><td class="n"></td><td class="n"></td></tr>
-          <tr><th scope="row">Press-conference backdrop</th><td class="y"></td><td class="y"></td><td class="n"></td><td class="n"></td></tr>
-          <tr><th scope="row">Trophy presentation</th><td>Champions</td><td>Runners-up</td><td class="n"></td><td>Moment award</td></tr>
-          <tr><th scope="row">Category exclusivity and season report</th><td class="y"></td><td class="y"></td><td class="y"></td><td class="y"></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
 
-<!-- 12 MOMENTS -->
-<section class="slide s-mid" data-deck="sponsor">
-  <div class="bg" style="opacity:.42"><img src="plate-shuttle-1x1.jpg" alt=""><canvas class="fx" aria-hidden="true"></canvas></div>
-  <span class="track">For partners</span>
-  <div class="wrap">
-    <div class="head" style="margin-bottom:40px">
-      <span class="kick">Moments and categories</span>
-      <h2 class="disp h2 split">Put your name on the best shot of the night.</h2>
-    </div>
-    <div class="mom">
-      <div class="mo rv"><span class="disp">Smash of the Day</span><p>The hardest smash of each match day, replayed on stream and posted as a reel.</p><small>3 match days</small></div>
-      <div class="mo rv"><span class="disp">Rally of the Match</span><p>The longest or most dramatic rally of each tie, flagged on the live stream.</p><small>Every tie</small></div>
-      <div class="mo rv"><span class="disp">Strategic Timeout</span><p>The mid-tie break with team huddles, stats and your branded slate.</p><small>Every tie</small></div>
-      <div class="mo rv"><span class="disp">Veteran's Valour</span><p>Honours the standout veteran of each day, the moment families share most.</p><small>3 awards</small></div>
-      <div class="mo rv"><span class="disp">Rising Yoddha</span><p>Celebrates the best young player of the season, with a trophy on finals day.</p><small>Season award</small></div>
-      <div class="mo rv"><span class="disp">Warrior of the Season</span><p>The league MVP, announced at the closing ceremony.</p><small>Season award</small></div>
-    </div>
-    <div class="g2" style="margin-top:44px">
-      <div class="rv" style="display:grid;gap:14px">
-        <h3 class="disp h3 gold">Category titles</h3>
-        <div class="chips"><span class="chip">Official Bank</span><span class="chip">Healthcare</span><span class="chip">Beverage and nutrition</span><span class="chip">Automobile</span><span class="chip">Real estate</span><span class="chip">Education</span><span class="chip">Radio and media</span><span class="chip">Apparel</span></div>
-      </div>
-      <div class="rv" style="display:grid;gap:14px">
-        <h3 class="disp h3 gold">In-kind partners</h3>
-        <p class="muted" style="margin:0">Supply what the league needs and receive partner rights matched to its value: Official Shuttle Partner, Hospitality (hotel) Partner, Food and Beverage Partner, Sports Apparel Partner.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- 13 BUILDER -->
-<section class="slide s-ind" id="builder" data-deck="sponsor">
-  <span class="track">For partners</span>
-  <div class="wrap">
-    <div class="head" style="margin-bottom:40px">
-      <span class="kick">Build your package</span>
-      <h2 class="disp h2 split">Pick a level. See what you get.</h2>
-    </div>
-    <div class="builder">
-      <div style="display:grid;gap:16px">
-        <fieldset class="pick" style="border:0;padding:0;margin:0">
-          <legend class="fine" style="margin-bottom:10px">Partnership level</legend>
-          <label><input type="radio" name="tier" id="tTitle" value="title" checked><span><span class="nm">Title partner</span><small>1 slot</small></span><span class="pr num">₹7,00,000</span></label>
-          <label><input type="radio" name="tier" id="tPow" value="powered"><span><span class="nm">Powered by</span><small>1 slot</small></span><span class="pr num">₹4,00,000</span></label>
-          <label><input type="radio" name="tier" id="tAss" value="associate"><span><span class="nm">Associate partner</span><small>3 slots</small></span><span class="pr num">₹2,00,000</span></label>
-          <label><input type="radio" name="tier" id="tMom" value="moment"><span><span class="nm">Moment or category</span><small>6 slots</small></span><span class="pr num">₹75,000</span></label>
-        </fieldset>
-        <div class="stepper">
-          <button type="button" id="mMinus" aria-label="Remove a named moment">−</button>
-          <output id="mCount" aria-live="polite">0</output>
-          <button type="button" id="mPlus" aria-label="Add a named moment">+</button>
-          <span>Add named moments at ₹75,000 each</span>
-        </div>
-      </div>
-      <div class="frame sum" aria-live="polite">
-        <span class="kick">Your season-one package</span>
-        <span class="total num" id="bTotal">₹7,00,000</span>
-        <div class="out" style="border-top:1px solid var(--line)">
-          <div><b class="num" id="bDay">₹6,306</b><span>Per day of visibility</span></div>
-          <div><b class="num" id="bMatch">₹10,000</b><span>Per live match</span></div>
-          <div><b class="num" id="bPass">8</b><span>Auction-night seats</span></div>
-        </div>
-        <ul class="ticks" id="bList"></ul>
-        <p class="fine">Founding partners who sign by 15 Nov 2026 get first right of renewal for seasons two and three at the same price, and appear in the auction campaign.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ===================== BOTH ===================== -->
 
-<!-- 14 INVESTMENT -->
-<section class="slide s-mid" id="investment" data-deck="franchise sponsor">
+<!-- FOR THE PLAYERS -->
+<section class="slide s-ind" id="players" data-deck="franchise sponsor">
   <div class="wrap">
-    <div class="money" style="align-items:center">
-      <div class="head" style="margin:0">
-        <span class="kick">Where the season's money goes</span>
-        <h2 class="disp h2 split">₹27 lakh into one season.</h2>
-        <p class="lead">Franchise fees, player registrations and partnerships fund a professionally run league. Every rupee goes into the arena, the broadcast, the players and the story your brand is part of.</p>
-      </div>
-      <div class="chart" role="img" aria-label="Season one budget by area, total 27.17 lakh rupees">
-        <div class="bar" tabindex="0"><span>Production and live stream</span><div class="trk"><i class="fill" style="width:100%"></i><em class="tip">LED, sound, scoring software, 4-camera live stream</em></div><b class="num">18.4%</b></div>
-        <div class="bar" tabindex="0"><span>Marketing and media</span><div class="trk"><i class="fill" style="width:86%"></i><em class="tip">Social media, hoardings, press conferences, auction night</em></div><b class="num">15.8%</b></div>
-        <div class="bar" tabindex="0"><span>Guests and ceremonies</span><div class="trk"><i class="fill" style="width:80%"></i><em class="tip">Celebrity guests, opening and closing ceremonies</em></div><b class="num">14.7%</b></div>
-        <div class="bar" tabindex="0"><span>Venue and arena build</span><div class="trk"><i class="fill" style="width:72%"></i><em class="tip">DSC Anand, seating and arena dressing</em></div><b class="num">13.3%</b></div>
-        <div class="bar" tabindex="0"><span>Prize money and trophies</span><div class="trk"><i class="fill" style="width:70%"></i><em class="tip">₹3 lakh prize pool plus trophies and mementos</em></div><b class="num">12.9%</b></div>
-        <div class="bar" tabindex="0"><span>Officials and shuttles</span><div class="trk"><i class="fill" style="width:68.5%"></i><em class="tip">Certified referee, umpires, line judges, 40 tubes of shuttles</em></div><b class="num">12.6%</b></div>
-        <div class="bar" tabindex="0"><span>Operations and contingency</span><div class="trk"><i class="fill" style="width:66.8%"></i><em class="tip">Food, medical, security, insurance, contingency</em></div><b class="num">12.3%</b></div>
-        <div class="chart-tot"><span>Season one</span><span class="num gold">100%</span></div>
-      </div>
+    <div class="head" style="margin-bottom:36px">
+      <span class="kick">For the players</span>
+      <h2 class="disp h2 split">₹12 lakh straight to Gujarat’s players.</h2>
+      <p class="lead">MSBL is our own investment in the game. We are building this league so badminton players in Gujarat are paid, seen and looked after, and so the sport rises across the state.</p>
     </div>
+    <div class="eq rv">
+      <div class="eqb"><span class="eqk">Auction purse</span><b class="num">6 × ₹1,50,000</b><span class="eqs">₹9,00,000 to drafted players</span></div>
+      <span class="eqo" aria-hidden="true">+</span>
+      <div class="eqb"><span class="eqk">Prize money</span><b class="num">₹3,00,000</b><span class="eqs">for the champions and runners-up</span></div>
+      <span class="eqo" aria-hidden="true">=</span>
+      <div class="eqb tot"><span class="eqk">Given to the players</span><b class="num" data-inr="1200000">₹12,00,000</b><span class="eqs">in Season One alone</span></div>
+    </div>
+    <div class="g3 pl">
+      <div class="pillar rv"><span class="n">Paid to play</span><p>Every one of the 96 drafted players earns from a ₹1,50,000 team purse. Talent has a price at MSBL.</p></div>
+      <div class="pillar rv"><span class="n">Looked after</span><p>Stay with breakfast, team meals and match kit are provided for every player, so nobody plays out of pocket.</p></div>
+      <div class="pillar rv"><span class="n">Seen across Gujarat</span><p>70 live-streamed matches, player profiles and reels: a stage where fans, clubs and selectors can watch.</p></div>
+      <div class="pillar rv"><span class="n">Played the right way</span><p>Certified officials, quality shuttles and a professional arena at DSC, Anand.</p></div>
+      <div class="pillar rv"><span class="n">Young and masters together</span><p>Rising players share the court with veterans, learning from them in every tie.</p></div>
+      <div class="pillar rv"><span class="n">A league that returns</span><p>Three seasons committed, so players have a tournament to train for every year.</p></div>
+    </div>
+    <p class="mission rv">Our purpose: help badminton rise in Gujarat, and make sure Gujarat’s players rise with it.</p>
   </div>
 </section>
+
 
 <!-- 15 CLOSE -->
 <section class="slide close" id="contact" data-deck="franchise sponsor">
@@ -921,10 +781,10 @@ html.print #matrix .kick{display:none}
       <img class="mk rv" src="msbl-mark-gold.png" alt="">
       <span class="kick">The call to battle</span>
       <h2 class="disp h1 split">Take your place before the conch sounds.</h2>
-      <p class="lead">Founding franchise and founding partner terms close on 15 November 2026. Call or write to book a meeting, see the venue or reserve a slot.</p>
+      <p class="lead">The first four franchises to sign get founding terms. Call or write to book a meeting, see the venue or reserve your team.</p>
       <div class="contact noprint rv">
         <a class="btn btn-gold" href="#franchise">Franchise terms</a>
-        <a class="btn btn-line" href="#tiers">Partner levels</a>
+        <a class="btn btn-line" href="#owner-money">The numbers</a>
       </div>
     </div>
     <aside class="chair rv" aria-label="Contact the chairman">
@@ -940,7 +800,7 @@ html.print #matrix .kick{display:none}
       </div>
     </aside>
   </div>
-  <p class="fine close-foot">Maha Sangram Badminton League · Season One · DSC (District Sports Center), Anand, Gujarat · 5–7 February 2027 (tentative)</p>
+  <p class="fine close-foot">Maha Sangram Badminton League · Season One · DSC (District Sports Complex), Anand, Gujarat · 5–7 February 2027 (tentative)</p>
 </section>
 
 </main>
@@ -958,8 +818,9 @@ html.print #matrix .kick{display:none}
   var inr=function(n){return '₹'+Math.round(n).toLocaleString('en-IN')};
 
   /* ---------- franchise calculator ---------- */
-  var fee=135150, TEAM=264850;
   var spon=document.getElementById('spon');
+  if(spon){
+  var fee=186150, TEAM=264850;
   function calc(){
     var s=+spon.value, spend=fee+TEAM;
     document.getElementById('sponV').textContent=inr(s);
@@ -968,11 +829,13 @@ html.print #matrix .kick{display:none}
     document.getElementById('oNet').textContent=inr(Math.max(spend-s,0));
     document.getElementById('o3').textContent=inr(fee*3);
   }
-  function setFee(v){fee=v;document.getElementById('feeFound').setAttribute('aria-pressed',v===135150);document.getElementById('feeStd').setAttribute('aria-pressed',v===185150);calc()}
-  document.getElementById('feeFound').addEventListener('click',function(){setFee(135150)});
-  document.getElementById('feeStd').addEventListener('click',function(){setFee(185150)});
+  function setFee(v){fee=v;document.getElementById('feeFound').setAttribute('aria-pressed',v===186150);document.getElementById('feeStd').setAttribute('aria-pressed',v===236150);calc()}
+  document.getElementById('feeFound').addEventListener('click',function(){setFee(186150)});
+  document.getElementById('feeStd').addEventListener('click',function(){setFee(236150)});
   spon.addEventListener('input',calc);calc();
+  }
 
+  if(document.getElementById('bTotal')){
   /* ---------- sponsor package builder ---------- */
   var TIERS={
     title:{p:700000,pass:8,list:['League title: "[Your brand] presents MSBL"','Presenting partner of the live auction night','On-screen logo for all 70 matches, 2 pre-roll spots a day','Main backdrop, 4 court-side boards, umpire chair','League patch on all six team jerseys','6 dedicated reels, champions trophy presentation']},
@@ -999,6 +862,7 @@ html.print #matrix .kick{display:none}
   document.getElementById('mPlus').addEventListener('click',function(){if(moments<3){moments++;build()}});
   document.getElementById('mMinus').addEventListener('click',function(){if(moments>0){moments--;build()}});
   build();
+  }
 
   /* ---------- nav ---------- */
   var nav=document.getElementById('nav');
@@ -1160,6 +1024,13 @@ html.print #matrix .kick{display:none}
     gsap.fromTo(cv?[img,cv]:img,{scale:1.15,yPercent:-4},{scale:1.02,yPercent:4,ease:'none',scrollTrigger:{trigger:img.closest('.slide'),start:'top bottom',end:'bottom top',scrub:true}});
   });
 
+
+  /* rupee counter */
+  document.querySelectorAll('[data-inr]').forEach(function(el){
+    var end=+el.dataset.inr,o={v:0};
+    gsap.to(o,{v:end,duration:1.8,ease:'power2.out',onUpdate:function(){el.textContent=inr(o.v)},
+      scrollTrigger:{trigger:el,start:'top bottom-=40',once:true}});
+  });
   /* counters */
   document.querySelectorAll('[data-count]').forEach(function(el){
     var end=+el.dataset.count,o={v:0};
