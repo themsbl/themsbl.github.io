@@ -480,6 +480,26 @@ html.print .wcard{padding:14px 16px;gap:6px}
 html.print .wcard p,html.print .series-how .pillar p{font-size:13.5px}
 html.print .series-how{gap:16px}
 html.print .channels{margin-top:16px}
+.kitgrid.solo{grid-template-columns:minmax(0,1fr);max-width:900px}
+.kitgrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,4vw,64px);align-items:center}
+@media (max-width:980px){.kitgrid{grid-template-columns:minmax(0,1fr)}}
+.kitfig{margin:0;display:grid;gap:12px}
+.kitfig svg{width:100%;height:auto;display:block}
+.kbody{fill:#1B1E4A;stroke:#D9B977;stroke-width:2;stroke-linejoin:round}
+.kline{fill:none;stroke:#D9B977;stroke-width:2}
+.kzone{fill:url(#kh);stroke:#D9B977;stroke-width:1.6;stroke-dasharray:5 4}
+.kres{fill:#D9B977;stroke:#D9B977}
+.kzt{fill:#F4EEE2;font:600 11px Saira,sans-serif;letter-spacing:.16em;text-anchor:middle}
+.kzt.sm{font-size:10px}
+.krt{fill:#0B0C26;font:700 12px Saira,sans-serif;letter-spacing:.16em;text-anchor:middle}
+.klg{fill:#E3D8C2;font:500 13px Saira,sans-serif}
+.klead{stroke:#D9B977;stroke-width:1.4;stroke-dasharray:3 3}
+.kitfig .kzone{animation:kpulse 3.2s ease-in-out infinite}
+@keyframes kpulse{50%{stroke-opacity:.45}}
+@media (prefers-reduced-motion:reduce){.kitfig .kzone{animation:none}}
+html.print #kit .head{margin-bottom:16px!important}
+html.print #kit .ticks li{font-size:14px}
+html.print .kitfig svg{max-height:560px}
 </style>
 </head>
 <body>
@@ -656,7 +676,7 @@ html.print .channels{margin-top:16px}
       <ul class="ticks rv">
         <li><b>A founding franchise for three seasons</b>, with first right to renew for season four.</li>
         <li><b>Your team, your identity.</b> Name and brand your army within the league's epic theme, with your jersey and colours.</li>
-        <li><b>Spots for your own sponsors.</b> The league gives every franchise branding spots on its team kit for placing its own sponsors.</li>
+        <li><b>Your kit, your sponsors.</b> Apart from the title sponsor and MSBL marks, the whole shirt and shorts are yours to brand. <a class="gold" href="#kit">See the kit</a>.</li>
         <li><b>The live auction.</b> A table for your owner, coach/icon players and two guests, and a ₹1,50,000 purse to draft a 16-player squad of men, women and masters players from the player pool.</li>
       </ul>
       <ul class="ticks rv">
@@ -673,6 +693,27 @@ html.print .channels{margin-top:16px}
       <div class="slots">
         <div class="slot"><b>I</b><em>Founding</em></div><div class="slot"><b>II</b><em>Founding</em></div><div class="slot"><b>III</b><em>Founding</em></div>
         <div class="slot"><b>IV</b><em>Founding</em></div><div class="slot std"><b>V</b><em>Standard</em></div><div class="slot std"><b>VI</b><em>Standard</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6b YOUR KIT -->
+<section class="slide s-ind" id="kit" data-deck="franchise">
+  <span class="track">For franchise owners</span>
+  <div class="wrap">
+    <div class="kitgrid solo">
+      <div class="kittext">
+        <div class="head" style="margin-bottom:28px">
+          <span class="kick">Your kit, your canvas</span>
+          <h2 class="disp h2 split">Two marks are ours. The rest of the armour is yours.</h2>
+          <p class="lead">Every warrior’s armour told you whose army he fought for. In MSBL, your team kit does the same, and you decide what it says. We hold just two places on it: the league’s title sponsor and the MSBL name. Everything else on the shirt and shorts is yours to sell, share or keep.</p>
+        </div>
+        <ul class="ticks rv">
+          <li><b>Two defined marks, the rest is open.</b> The title sponsor and the MSBL name have their fixed places on the kit. Everywhere else on the shirt and shorts, you brand your own sponsors.</li>
+          <li><b>Your deals, your money.</b> You find the sponsors, you set the price and you keep every rupee.</li>
+          <li><b>Bring your own business.</b> Put your own company’s logo on the kit and let your team carry your brand.</li>
+        </ul>
       </div>
     </div>
   </div>
