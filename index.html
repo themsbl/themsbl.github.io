@@ -500,6 +500,23 @@ html.print .channels{margin-top:16px}
 html.print #kit .head{margin-bottom:16px!important}
 html.print #kit .ticks li{font-size:14px}
 html.print .kitfig svg{max-height:560px}
+.chair.founders{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:start;padding:28px;text-align:left;justify-items:stretch}
+.fd-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.fd{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:12px;align-content:start}
+@media (max-width:520px){.fd .disp{font-size:12px;letter-spacing:.04em}.fd .role{font-size:10px;letter-spacing:.16em}}
+.fd-ph{position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line);background:radial-gradient(circle at 50% 38%,rgba(217,185,119,.42),rgba(217,185,119,0) 62%),linear-gradient(180deg,#1B1E4A,#0B0C26)}
+.fd-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 0;transition:transform .8s ease}
+.fd-ph img.zoom{height:150%;top:0;bottom:auto;object-position:50% 3%}
+.fd:hover .fd-ph img{transform:scale(1.04)}
+.fd figcaption{display:grid;gap:4px}
+.fd .disp{font-size:clamp(13px,1.15vw,16px);color:var(--ivory);letter-spacing:.08em;line-height:1.35}
+.fd .role{font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.founders .chair-txt{padding-bottom:0;gap:0}
+.ct-h{font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--sand)}
+.founders .ct{margin-top:10px;padding-top:14px}
+@media (max-width:520px){.chair.founders{text-align:left;justify-items:stretch}}
+html.print .chair.founders{padding:22px;gap:14px}
+html.print .fd-ph{aspect-ratio:1/1}
 </style>
 </head>
 <body>
@@ -828,11 +845,14 @@ html.print .kitfig svg{max-height:560px}
         <a class="btn btn-line" href="#owner-money">The numbers</a>
       </div>
     </div>
-    <aside class="chair rv" aria-label="Contact the chairman">
-      <div class="chair-ph"><img src="founder-gaurav-bhatt.webp" alt="Mr. Gaurav Bhatt, Chairman, MSBL"></div>
+    <aside class="chair founders rv" aria-label="The founders">
+      <span class="kick">The founders</span>
+      <div class="fd-row">
+        <figure class="fd"><div class="fd-ph"><img class="zoom" src="founder-gaurav-bhatt.webp" alt="Mr. Gaurav Bhatt, Chairman, MSBL"></div><figcaption><b class="disp">Mr. Gaurav Bhatt</b><span class="role">Founder · Chairman</span></figcaption></figure>
+        <figure class="fd"><div class="fd-ph"><img src="founder-monesh-mashruwala.webp" alt="Mr. Monesh Mashruwala, Founder, MSBL"></div><figcaption><b class="disp">Mr. Monesh Mashruwala</b><span class="role">Founder</span></figcaption></figure>
+      </div>
       <div class="chair-txt">
-        <b class="disp">Mr. Gaurav Bhatt</b>
-        <span class="role">Chairman</span>
+        <span class="ct-h">Contact the chairman</span>
         <ul class="ct">
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 7.6c.3-.6.6-.6.9-.6h.6c.2 0 .5 0 .7.5l.8 1.9c.1.3 0 .5-.1.7l-.5.6c-.2.2-.2.4 0 .7.6 1 1.6 2 2.7 2.6.3.2.5.1.7-.1l.6-.7c.2-.2.4-.3.7-.2l1.8.9c.3.1.4.3.4.5 0 .6-.3 1.5-1.2 1.9-.8.4-1.9.4-3.6-.4-2.2-1-3.6-2.9-4.1-3.7-.8-1.2-1-2.5-.4-3.6Z" fill="currentColor"/></svg><span><small>WhatsApp</small><a href="https://wa.me/919825124757" target="_blank" rel="noopener" class="num">+91 98251 24757</a></span></li>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span><small>Email</small><a href="mailto:mahasangramleague@gmail.com">mahasangramleague@gmail.com</a></span></li>
